@@ -1,0 +1,10 @@
+version: '3.9'
+services:
+  devcontainer:
+    image: dkm10/devops-minimal
+    container_name: devcon
+    tty: true
+    volumes:
+      - $HOME/dockerhome:/home/devops
+      - $HOME/git:/git
+      - $HOME/projects:/projects
